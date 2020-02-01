@@ -1,7 +1,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-12 text-center" id="top-bar">
-            <img src="/assets/images/burger.png" alt="burger" />
+            <img src="/assets/img/burger.png" alt="burger" />
             <h1> Eat-Da-Burger! </h1>
         </div>
         <div class="col-md-6 text-center" class="task">
@@ -9,9 +9,15 @@
                 {{!-- Handlebars logic if not devoured --}}
                 {{#each burger_data}}
                 {{#unless this.devoured}}
+                <div class="col-md-9 text-center">
+                    <pre>{{this.id}}. {{this.burger_name}}
+					</pre>
+                    <!-- {{this.Date}} -->
+                </div>
                 <div class="col-md-3 text-center">
                     <form class="devour-form button-size">
                         <input input type="hidden" class="burger_id" type="text" value={{this.id}}>
+                        <button type="submit" class="btn btn-default" id="devour">Devour it!</button>
                     </form>
                 </div>
                 {{/unless}}
@@ -32,7 +38,8 @@
     <div class="row">
         <div class="col-md-12 text-center enter_section">
             <form>
-                <input type="text" class="form-control" name="burger_name" value="" id="enter_text">
+                <input type="text" class="form-control" name="burger_name" value="" placeholder='Enter your burger here'
+                    id="enter_text">
                 <button type="submit" class="btn btn-primary" id="text-enter-button">Submit</button>
             </form>
             <p>Enter a burger you want to eat Click the "Submit" button.</p>

@@ -1,0 +1,24 @@
+body {
+    background-color: cadetblue;
+}
+
+p, pre {
+    font-size: 18px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.form-control, .form-control:disabled, .form-control[readonly] {
+    background-color: whitesmoke;
+}
+
+.form-control {
+    margin-bottom: .5em;
+}
+
+#text-enter-button, #devour {
+    margin-top: .5em;
+    margin-bottom: .5em;
+    color: black;
+    background: orange;
+    border: orange;
+}

@@ -4,7 +4,8 @@
   "description": "A restaurant app that lets users input the names of burgers they'd like to eat.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,7 @@
   "dependencies": {
     "express": "^4.17.1",
     "express-handlebars": "^3.1.0",
-    "mysql": "^2.18.0"
+    "mysql": "^2.18.0",
+    "start": "^5.1.0"
   }
 }
